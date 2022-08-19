@@ -8,7 +8,12 @@ export const Header = () => {
     localStorage.setItem("lang", lang);
     window.location.reload();
   };
-
+  function refreshPage() {
+    setTimeout(()=>{
+        window.location.reload(false);
+    }, 500);
+    console.log('page to reload')
+}
   return (
     <>
       <input type="checkbox" id="active"/>
@@ -19,7 +24,8 @@ export const Header = () => {
         <ul>
           <li>
             {" "}
-            <NavLink
+            <NavLink 
+              onClick={refreshPage}
               className="nav-item"
               exact
               to="/"
@@ -30,6 +36,7 @@ export const Header = () => {
           <li>
             {" "}
             <NavLink
+              onClick={refreshPage}
               className="nav-item"
               exact
               to="/about"
@@ -40,6 +47,7 @@ export const Header = () => {
           <li>
             {" "}
             <NavLink
+              onClick={refreshPage}
               className="nav-item"
               exact
               to="/news"
@@ -50,6 +58,7 @@ export const Header = () => {
           <li>
             {" "}
             <NavLink
+              onClick={refreshPage}
               className="nav-item"
               exact
               to="/gallery"
@@ -60,6 +69,7 @@ export const Header = () => {
           <li>
             {" "}
             <NavLink
+              onClick={refreshPage}
               className="nav-item"
               exact
               to="/contact"

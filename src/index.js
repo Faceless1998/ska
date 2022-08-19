@@ -6,6 +6,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import "./i18n";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
