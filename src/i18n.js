@@ -5,17 +5,23 @@ const resources = {
     ge: {
         translation:{
           "Home":"მთავარი",
-          "Services":"სერვისი",
           "About":"ჩვენს შესახებ",
-          "Contact":"კონტაქტები"
+          "News":"სიახლეები",
+          "Gallery":"გალერეა",
+          "Contact":"კონტაქტები",
+          "EN":"ინგ.",
+          "GE":"ქარ."
         }
     },
     en: {
         translation:{
           "Home":"Home",
-          "Services":"Services",
           "About":"About",
-          "Contact":"Contact"
+          "News":"News",
+          "Gallery":"Gallery",
+          "Contact":"Contact",
+          "EN":"EN",
+          "GE":"GE"
         }
     }
 };
