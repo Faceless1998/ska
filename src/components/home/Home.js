@@ -1,9 +1,16 @@
 import React from 'react'
+import Homecategories from '../homecategories/Homecategories'
+import Homehead from '../homehead/Homehead'
+import Homenews from '../homenews/Homenews'
 import './home.css'
 const Home = () => {
 
   return (
-    <div>hello lali</div>
+    <>
+    <Homehead />
+    <Homecategories />
+    <Homenews />
+    </>
   )
 }
 

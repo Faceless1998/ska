@@ -1,0 +1,151 @@
+.aacontainer {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  color: #363636;
+  font-size: 40px;
+}
+.aainner-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.aacard {
+  flex-basis: 33.33333%;
+  padding: 15px;
+}
+.aainner-card  {
+  background-color: #fff;
+  padding: 15px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.1)
+}
+.aaimg-wrapper {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 10px;
+}
+.aaimg-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.aacontent {
+  margin-bottom: 20px;
+}
+.aacontent h1 {
+  font-weight: 900;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #444;
+}
+.aacontent p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+}
+.aabtn-wrapper {
+  display: block;
+  text-align: center;
+}
+.aaview-btn {
+  width: 70%;
+  height: 40px;
+  border: none;
+  background-color: steelblue;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+.aaview-btn:hover {
+  box-shadow: 0 3px 6px rgba(0,0,0,.4);
+}
+
+.aalight-box {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0,0,0,.6);
+  width: 100%;
+  height: 100vh;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 200ms ease-out;
+}
+.aabox {
+  width: 600px;
+  height: 400px;
+  background-color: #fff;
+  transform: scale(0);
+  transition: all 200ms ease-in-out;
+  padding: 10px;
+  box-shadow: 0 3px 9px rgba(0,0,0,.1);
+  position: relative;
+}
+.aabox-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 15px;
+}
+.aabox .aalight-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.aabox .aaclose-btn {
+  position: absolute;
+  z-index: 100;
+  font-size: 30px;
+  color: #ccc;
+  left: 100%;
+  top: 0;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: all 200ms linear;
+}
+/* Effect */
+.aaeffect .aalight-box {
+  opacity: 1;
+  visibility: visible;
+}
+.aaeffect .aalight-box .aabox {
+  transform: scale(1);
+}
+
+@media (max-width: 780px) {
+  .aacard {
+    flex-basis: 50%;
+  }
+  .aatitle {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .aacard {
+    flex-basis: 5100%;
+  }
+  .aabox .aaclose-btn {
+    margin-left: 0;
+    left: 80%;
+    top: -12%;
+  }
+}
+.aacredit {
+  font-size: 14px;
+}
