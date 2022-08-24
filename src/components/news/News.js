@@ -26,6 +26,12 @@ export const News = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  function refreshPage() {
+    setTimeout(()=>{
+        window.location.reload(false);
+    }, 500);
+    console.log('page to reload')
+}
 
   return (
     <>
@@ -35,10 +41,10 @@ export const News = () => {
           <div className="aainner-wrapper">
             {imageJSON.map((img, index) => {
               return (
-                <div className="aacard">
+                <div className="aacard" key={index}>
                   <div className="aainner-card">
                     <div className="aaimg-wrapper">
-                      <Link to={`/news/${index}`}>
+                      <Link to={`/news/${index}`}  onClick={refreshPage}>
                         <div className="cardn">
                           <img
                             src={img.src}

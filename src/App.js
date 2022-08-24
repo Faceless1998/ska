@@ -1,5 +1,5 @@
 import "./App.css";
-import { Route, Routes } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import Home from "./components/home/Home.js";
 import About from "./components/about/About";
 import News from "./components/news/News";
@@ -15,14 +15,14 @@ const App = () => {
       <div>
         <div>
           <Header />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/news" element={<News />} />
-            <Route path="/gallery" element={<Gallery />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/news/:id" component={Newsingle} />
-          </Routes>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/news" component={News} />
+            <Route exact path="/gallery" component={Gallery} />
+            <Route exact path="/contact" component={Contact} />
+            <Route exact path="/news/:id" component={Newsingle} />
+          </Switch>
         </div>
       </div>
     </>
