@@ -27,7 +27,7 @@ export const Header = () => {
             <NavLink 
               onClick={refreshPage}
               className="nav-item"
-              exact="true"
+             
               to="/"
             >
               {t("Home")}
@@ -38,7 +38,7 @@ export const Header = () => {
             <NavLink
               onClick={refreshPage}
               className="nav-item"
-              exact="true"
+             
               to="/about"
             >
               {t("About")}
@@ -49,7 +49,7 @@ export const Header = () => {
             <NavLink
               onClick={refreshPage}
               className="nav-item"
-              exact="true"
+             
               to="/news"
             >
               {t("News")}{" "}
@@ -60,7 +60,7 @@ export const Header = () => {
             <NavLink
               onClick={refreshPage}
               className="nav-item"
-              exact="true"
+             
               to="/gallery"
             >
               {t("Gallery")}{" "}
@@ -71,7 +71,7 @@ export const Header = () => {
             <NavLink
               onClick={refreshPage}
               className="nav-item"
-              exact="true"
+             
               to="/contact"
             >
               {t("Contact")}{" "}

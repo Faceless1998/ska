@@ -1,9 +1,9 @@
-import INSIDE1 from "./../../assets/mail-2237468__340.png";
-import INSIDE2 from "./../../assets/mug-2235591__340.png";
-import INSIDE3 from "./../../assets/mail-2237468__340.png";
-import INSIDE4 from "./../../assets/mug-2235591__340.png";
-import INSIDE5 from "./../../assets/mail-2237468__340.png";
-import INSIDE6 from "./../../assets/mug-2235591__340.png";
+import INSIDE1 from "./../../assets/topic1.png";
+import INSIDE2 from "./../../assets/topic2.png";
+import INSIDE3 from "./../../assets/topic3.png";
+import INSIDE4 from "./../../assets/topic4.png";
+import INSIDE5 from "./../../assets/topic5.png";
+import INSIDE6 from "./../../assets/topic6.png";
 
 
 
